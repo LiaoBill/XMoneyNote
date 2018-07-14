@@ -262,10 +262,10 @@ public class XObject {
     }
     //category
     if(this.getCategory().equals("HAOHAO")){
-      cons += "廖澄.\n";
+      cons += "昊昊.\n";
     }
     else if(this.getCategory().equals("YUANYUAN")){
-      cons += "廖清.\n";
+      cons += "远远.\n";
     }
     else{
       cons += "公共.\n";
