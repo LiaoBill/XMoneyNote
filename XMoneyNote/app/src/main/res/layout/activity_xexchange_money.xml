@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg2"
+    tools:context="liaoudi.xmoneynote.XMoneyExhangeCalSys.XExchangeMoney">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:text="返"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@drawable/shape"
+                android:textColor="@color/white"/>
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:divider="@color/white"
+                android:dividerHeight="5dp">
+            </ListView>
+
+            <TextView
+                android:id="@+id/textview_name"
+                android:layout_below="@+id/list_view"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="货币名称 (CN)"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/textview_currency"
+                android:layout_below="@+id/list_view"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="货币汇率 (CU)"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/edittext_name"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textview_name"
+                android:layout_alignParentLeft="true"
+                android:text="美元(USD)"
+                android:typeface="monospace"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:maxLength="10"
+                android:gravity="center"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/edittext_currency"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textview_currency"
+                android:layout_alignParentRight="true"
+                android:text="0.1558"
+                android:typeface="monospace"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:maxLength="10"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textview_ch_yuan"
+                android:layout_below="@+id/edittext_currency"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="人民币 (CHYUAN)"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_ch_yuan"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textview_ch_yuan"
+                android:layout_alignParentRight="true"
+                android:text="0.00"
+                android:typeface="monospace"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:maxLength="10"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:hint="小数或整数"
+                android:backgroundTint="@color/black"
+                android:textCursorDrawable="@color/bg2"/>
+
+            <TextView
+                android:id="@+id/textview_other_cost"
+                android:layout_below="@+id/edittext_currency"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="对应金额 (CORYUAN)"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_other_cost"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textview_ch_yuan"
+                android:layout_alignParentLeft="true"
+                android:text="0.00"
+                android:typeface="monospace"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:maxLength="10"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginLeft="30dp"
+                android:hint="小数或整数"
+                android:backgroundTint="@color/black"
+                android:textCursorDrawable="@color/bg2"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

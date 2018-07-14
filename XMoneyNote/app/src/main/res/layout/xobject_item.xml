@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/xobject_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="12/30\n12:20"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:typeface="monospace"/>
+    <TextView
+        android:id="@+id/xobject_des"
+        android:layout_toRightOf="@+id/xobject_id"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="简介在这里description"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:typeface="monospace"/>
+    <TextView
+        android:id="@+id/xobject_children_count"
+        android:layout_toRightOf="@+id/xobject_des"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:text="子项:10个"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:typeface="monospace"/>
+    <TextView
+        android:id="@+id/xobject_cost"
+        android:layout_toRightOf="@+id/xobject_id"
+        android:layout_below="@+id/xobject_des"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="30.24"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:typeface="monospace"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/xobject_unit"
+        android:layout_toRightOf="@+id/xobject_cost"
+        android:layout_below="@+id/xobject_des"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="$美元"
+        android:textColor="@color/orangered"
+        android:gravity="center_vertical"
+        android:typeface="monospace"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/xobject_category"
+        android:layout_toRightOf="@+id/xobject_unit"
+        android:layout_below="@+id/xobject_des"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="共同承担"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:typeface="monospace"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+
+</RelativeLayout>

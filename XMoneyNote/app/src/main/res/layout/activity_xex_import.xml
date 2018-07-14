@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg2"
+    tools:context=".XExImportSys.XExImport">
+
+    <TextView
+        android:id="@+id/textview_current_title"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="状态将在这里显示"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/button_import"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textview_current_title"
+        android:text="从剪切板导入"
+        android:typeface="monospace"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:background="@drawable/shape"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/button_export"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textview_current_title"
+        android:layout_alignParentRight="true"
+        android:text="导出到剪切板"
+        android:typeface="monospace"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button_export_report"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_export"
+        android:text="导出报告文件"
+        android:typeface="monospace"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/shape"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

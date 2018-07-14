@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg2"
+    tools:context=".XImageDetailView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_info"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:typeface="monospace"
+                android:text="提示信息将在这里显示"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageview_big"
+                android:layout_width="300dp"
+                android:layout_height="399dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ivshape" />
+
+            <Button
+                android:id="@+id/button_previous"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:text="前"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:text="后"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/imageview_big"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:layout_marginTop="90dp"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:typeface="monospace" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
