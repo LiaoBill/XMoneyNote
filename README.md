@@ -13,3 +13,7 @@ An Android app for cost record and accounts settlement for my own family traveli
 		g. 汇率快捷计算
 		h. JSON格式数据导出和导入
 		i. 报表生成
+## 操作介绍视频
+```
+	链接：https://pan.baidu.com/s/1r1ytAQRJg5nX9oUx7DF9IA 密码：x5jk
+```
